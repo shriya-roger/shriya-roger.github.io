@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Lab 12 Greeting Card  -->
+<meta charset="utf-8">
+<title>Lab 12: Greeting Card </title>
+</head>
+
+<style>
+body {background-color:SkyBlue;
+background-image: url(Lab12_Images/header.jpg);
+backgroud-repeat: repeat-y;} 
+
+
+h1 {text-align:center;
+font-size: 50px;
+text-decoration:underline;
+color:SaddleBrown;
+background-color: LightBlue;
+text-shadow: black 1px 1px 2px;
+} 
+
+#missing {position:absolute;
+top:140px;
+left:900px;
+width:200px;
+font-size: 25px;
+text-decoration:underline;
+color:SaddleBrown;
+background-color: LightBlue;
+
+}
+
+.four {position:absolute;
+top:200px;
+left:1400px;
+width:200px;
+;}
+
+.one {position:absolute;
+top:200px;
+left:400px;
+width:200px;
+;}
+
+#love {position:absolute;
+top:200px;
+left:900px;
+width:200px;
+text-align:center;
+font-size: 35px;
+color: SaddleBrown;
+text-shadow: black 2px 2px 2px;
+}
+
+#seeya {position:absolute;
+top:600px;
+left:690px;
+width:700px;
+font-size: 35px;
+color: SaddleBrown;
+text-shadow: black 2px 2px 2px;
+}
+
+<!--four {position:absolute;
+top:40px;
+left:200px;
+width:200px;
+font-size 12pt;
+text-align:justify;
+padding: 5px 10px;}--> 
+
+</style>
+
+
+<script>
+function swap(x){
+ document.getElementById("Daddy").src=x;}
+
+function change(x){
+ document.getElementById("Mummy").src=x;}
+
+</script>
+
+<body>
+
+<h1> To My Dear Mummy and Daddy </h1> 
+
+<h2 id="missing"> I miss you a lot!</h2> 
+
+<img id="Daddy" class="one" onmouseover="swap('Lab12_Images/pic3.png');" onmouseout="swap('Lab12_Images/pic1.png');" height="400" width="200" src="Lab12_Images/pic1.png" alt="Daddy and me">
+
+<img id="Mummy" class="four" onmouseover="change('Lab12_Images/pic2.png');document.getElementById('love').innerHTML='<h2> I miss getting icecream with you guys </h2> ';" onmouseout="change('Lab12_Images/pic4.png');document.getElementById('love').innerHTML='<h2> I <br> LOVE <br> YOU <br> GUYS! </h2>'; " height="400" width="200" src="Lab12_Images/pic4.png" alt="Mummy and me">
+
+<div id="love"> 
+<h2> I <br>
+
+ LOVE  <br>
+
+ YOU  <br>
+
+ GUYS </h2> 
+</div> 
+
+<h2 id="seeya"><em> I can't wait to see you guys for Christmas!</em> </h2>
+
+</body>
+</html>
